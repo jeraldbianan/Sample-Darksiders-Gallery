@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "Requiem";
+  src: url("../fonts/Requiem.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+}
+
+/* Wrappers */
+.container {
+  min-height: 92vh;
+}
+
+/*Deafult text styling*/
+p {
+  font-family: "Requiem";
+  font-size: 16px;
+  color: #fff;
+}
+
+h2 {
+  font-family: "Requiem";
+  font-size: 32px;
+  color: #fff;
+}
+
+body {
+  background: linear-gradient(rgb(0, 0, 0), rgb(134, 134, 134));
+  height: 100%;
+}
+
+/* Page styling */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20vw;
+  margin-bottom: 30px;
+}
+
+.logo img {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+}
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+}
+
+.nav-wrapper ul li {
+  display: flex;
+  align-items: center;
+}
+
+.nav-wrapper ul li {
+  display: inline-block;
+  list-style: none;
+  justify-self: end;
+  margin: 40px 0 40px 30px;
+}
+
+.nav-wrapper ul li a {
+  color: #fff;
+  font-family: "Requiem";
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.wrapper-gallery {
+  margin: 0 20vw;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  text-align: center;
+  font-family: "Requiem";
+  font-size: 16px;
+  color: #fff;
+  min-height: 8vh;
+}
+
+.nav-wrapper button {
+  background: #111;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.nav-wrapper button:hover {
+  background: #333;
+  transition: 0.3s;
+}
+
+.nav-wrapper .icon-menu svg {
+  fill: white;
+  width: 50px;
+  height: 50px;
+  display: none;
+}
+
+@media (max-width: 920px) {
+    /* FOR MOBILE */
+  .nav {
+    margin: 0 1rem 5rem;
+  }
+  .nav-wrapper .icon-menu svg {
+    display: block;
+  }
+  .wrapper-gallery {
+    margin: 0 1rem 3rem;
+  }
+  .nav-wrapper {
+    position: relative;
+  }
+  
+.nav-links {
+    position: absolute;
+    height: 500px;
+    background: #111;
+    top: 80px;
+    left: -100px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5rem 3rem 0;
+    transform: translateX(300px);
+    transition: .3s ease-in ;
+}
+
+  .nav-links.open {
+    transform: translate(0px);
+  }
+}
